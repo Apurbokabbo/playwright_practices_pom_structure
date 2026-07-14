@@ -1,0 +1,19 @@
+pip install pytest-playwright
+playwright install
+pip install pathlib
+pip install python-dotenv
+pip install pytest
+pip install PyYAML
+pip install allure-pytest
+
+Allure Report: https://allurereport.org/docs/v3/install/
+npm install -g allure
+allure --version
+
+
+https://chromewebstore.google.com/detail/xpath-finder-css-selector/aapnajplekoonekkimnljfhcilllgedc
+https://letcode.in/product/letxpath
+
+
+Run Commands:
+pytest tests/ui/test_login.py --test-browser=chromium --headless=False --alluredir=reports/allure-results
