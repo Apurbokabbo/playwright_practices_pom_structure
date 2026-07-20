@@ -9,9 +9,7 @@ class BasePage:
         self.logger = setup_logger(self.__class__.__name__)
         self.default_timeout = 60000  # milliseconds
 
-    def perform_with_retry(self, action, description,
-                           retries=3,
-                           delay=1):
+    def perform_with_retry(self, action, description,retries=3,delay=1):
 
         for attempt in range(1, retries + 1):
             try:
@@ -25,9 +23,7 @@ class BasePage:
                 )
 
                 if attempt == retries:
-                    raise
-
-                self.page.wait_for_timeout(delay * 1000)
+                    raise self.page.wait_for_timeout(delay * 1000)
 
     # ---------- Core Waits ----------
     def wait_for_visible(self, selector, timeout=None):
