@@ -46,7 +46,7 @@ class BasePage:
         self.logger.info(f"Waiting for {selector} to disappear.")
         self.page.locator(selector).wait_for(state="hidden", timeout=timeout or self.default_timeout)
 
-    # ---------- Element Actions ----------
+
     # ---------- Element Actions ----------
     def click(self, selector):
         def action():

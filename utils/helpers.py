@@ -6,7 +6,7 @@ from datetime import datetime
 def take_screenshot(page, name):
     try:
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        path = Path(BaseConfig.SCREENSHOT_DIR)
+        path = Path(BaseConfig.SCREEN_SHOT_DIR)
         path.mkdir(parents=True, exist_ok=True)
         file_path = path / f"{name}_{timestamp}.png"
         page.wait_for_load_state("networkidle", timeout=10000)

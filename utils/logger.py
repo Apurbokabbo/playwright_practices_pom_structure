@@ -10,7 +10,7 @@ def setup_logger(name: str , level=logging.INFO):
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
-    if logger.Handlers:
+    if logger.handlers:
         return logger
 
 
