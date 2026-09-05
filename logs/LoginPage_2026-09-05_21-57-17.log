@@ -1,0 +1,9 @@
+2026-09-05 21:57:17,217 - LoginPage - INFO - open url
+2026-09-05 21:57:28,329 - LoginPage - INFO - login page
+2026-09-05 21:57:28,330 - LoginPage - INFO - Waiting for //*[@data-test='username'] to be visible.
+2026-09-05 21:57:28,412 - LoginPage - INFO - Entering text 'standard_user' in //*[@data-test='username']
+2026-09-05 21:57:28,872 - LoginPage - INFO - Waiting for //*[@data-test='password'] to be visible.
+2026-09-05 21:57:28,895 - LoginPage - INFO - Entering text 'secret_sauce' in //*[@data-test='password']
+2026-09-05 21:57:29,346 - LoginPage - INFO - Waiting for //*[@data-test='login-button'] to be visible.
+2026-09-05 21:57:29,370 - LoginPage - INFO - Clicking //*[@data-test='login-button']
+2026-09-05 21:57:29,706 - LoginPage - INFO - Login info submitted

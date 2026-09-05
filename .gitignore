@@ -1,0 +1,6 @@
+reports
+reports/allure-reports
+reports/screen_shot
+__pycache__/
+.cache/
+.log
