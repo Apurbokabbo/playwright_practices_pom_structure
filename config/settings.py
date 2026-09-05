@@ -10,7 +10,7 @@ BROWSER = BaseConfig.BROWSER
 
 
 try:
-    ymal_path = BaseConfig.ENV_DIR/f"{ENV}.ymal"
+    ymal_path = BaseConfig.ENV_DIR/f"{ENV}.yaml"
     with open(ymal_path, "r") as file:
         config_data = yaml.safe_load(file)
         BASE_URL = config_data["base_url"]

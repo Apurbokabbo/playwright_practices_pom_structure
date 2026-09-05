@@ -7,8 +7,8 @@ class BaseConfig:
     BASE_DIR = Path(__file__).resolve().parent.parent
     SCREEN_SHOT_DIR = BASE_DIR /"reports" /"screen_shot"
     LOGS_DIR = BASE_DIR /"logs"
-    ENV_DIR = BASE_DIR /"config"/"environment"
-    REPORTS_DIR = BASE_DIR /"reports"/"allure-reports"
+    ENV_DIR = BASE_DIR /"config"/"environments"
+    REPORT_DIR = BASE_DIR /"reports"/"allure-reports"
     RECORD_VIDEOS_DIR = BASE_DIR /"reports"/"videos"
     
 
