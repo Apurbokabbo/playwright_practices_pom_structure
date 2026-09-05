@@ -63,8 +63,8 @@ class LoginPage(BasePage):
     def login (self):
         try:
             self.logger.info("login page")
-            self.enter_text(LoginPageLocators.USER_NAME,self.page["username"])
-            self.enter_text(LoginPageLocators.PASSWORD,self.page["password"])
+            self.enter_text(LoginPageLocators.USER_NAME, self.test_data["username"])
+            self.enter_text(LoginPageLocators.PASSWORD, self.test_data["password"])
             self.click(LoginPageLocators.LOGIN_BUTTON)
             self.logger.info("Login info submitted")
             screenshot = take_screenshot(self.page,"login")

@@ -14,6 +14,26 @@ allure --version
 https://chromewebstore.google.com/detail/xpath-finder-css-selector/aapnajplekoonekkimnljfhcilllgedc
 https://letcode.in/product/letxpath
 
+API: https://randomuser.me/api/
 
 Run Commands:
 pytest tests/ui/test_login.py --test-browser=chromium --headless=False --alluredir=reports/allure-results
+
+python run_suite.py
+
+Report:
+allure serve reports/allure-results
+allure generate reports/allure-results --clean -o allure-report
+allure-pdf reports/allure-results -o report.pdf
+allure awesome reports/allure-results
+allure-docx reports/allure-results report.docx
+
+pip install mysql-connector-python
+
+
+Jenkins Plugin List
+1. Allure Jenkins Plugin
+2. AnsiColor
+3. Git plugin
+4. GitHub Integration Plugin
+5. Pipeline: GitHub

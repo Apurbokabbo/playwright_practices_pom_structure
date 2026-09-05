@@ -26,7 +26,8 @@ class TestLogin:
     @allure.title("Login ")
     @allure.description("Login ")
     @pytest.mark.order(2)
-    @pytest.mark.dependency(depends = ["test_login_url"], name="test_login_with_valid_date")
+    ##@pytest.mark.dependency(depends = ["test_login_url"], name="test_login_with_valid_date")
     def test_login_with_valid_date(self):
         with allure.step("Login Page"):
+            self.login_page.open()
             self.login_page.login()
